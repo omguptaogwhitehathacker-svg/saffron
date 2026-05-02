@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations — Saffron & Smoke</title>
+  <meta name="description" content="Reserve a table at Saffron & Smoke. Modern Indian dining in Mumbai.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="gold-text">Saffron &amp; Smoke</span></a>
+      <nav><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="reservations.html">Reservations</a><a href="contact.html">Contact</a></nav>
+      <button class="hamburger" aria-label="Toggle menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+    <div class="mobile-nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="reservations.html">Reservations</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <section class="parallax" style="background-image:url(images/about-parallax.jpg); min-height:55vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="label">Book a Table</p>
+      <h1 style="font-size:clamp(2.5rem,6vw,4rem)">Reservations</h1>
+      <div class="gold-divider"></div>
+      <p style="opacity:0.85; max-width:600px; margin:0 auto">Reserve your evening with us. We'll confirm your booking by email.</p>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--bg)">
+    <div class="container" style="max-width:700px">
+      <form id="reservation-form" class="form-card">
+        <div class="form-row">
+          <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" required></div>
+          <div class="form-group"><label>Guests</label>
+            <select name="guests">
+              <option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option>
+              <option>5 guests</option><option>6 guests</option><option>7 guests</option><option>8 guests</option>
+              <option>9 guests</option><option>10 guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Date</label><input type="date" name="date" required></div>
+          <div class="form-group"><label>Time</label><input type="time" name="time" required></div>
+        </div>
+        <div class="form-group"><label>Special Requests</label><textarea name="notes" rows="4" placeholder="Anniversary, allergies, seating preference…"></textarea></div>
+        <button type="submit" class="btn-gold w-full">Send Reservation Request</button>
+        <p class="form-note">Your request will be sent to <a href="mailto:theunnamedproject@protonmail.me">theunnamedproject@protonmail.me</a></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><h3 class="gold-text">Saffron &amp; Smoke</h3><p>A modern Indian dining experience. Honest spices, soulful cooking.</p></div>
+      <div><h4>Visit</h4><p>42 Linking Road<br>Bandra West, Mumbai<br>Open 12pm – 11pm</p></div>
+      <div><h4>Contact</h4><a href="mailto:theunnamedproject@protonmail.me">theunnamedproject@protonmail.me</a><p>+91 98765 43210</p></div>
+    </div>
+    <div class="footer-bottom">© <span id="footer-year"></span> Saffron &amp; Smoke. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

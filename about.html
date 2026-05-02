@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Saffron & Smoke</title>
+  <meta name="description" content="The story behind Saffron & Smoke — a modern Indian restaurant rooted in tradition.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="gold-text">Saffron &amp; Smoke</span></a>
+      <nav><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="reservations.html">Reservations</a><a href="contact.html">Contact</a></nav>
+      <button class="hamburger" aria-label="Toggle menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+    <div class="mobile-nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="reservations.html">Reservations</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <section class="parallax" style="background-image:url(images/about-parallax.jpg); min-height:60vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="label">Our Story</p>
+      <h1 style="font-size:clamp(2.5rem,6vw,4rem)">A Modern Indian Table</h1>
+      <div class="gold-divider"></div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--bg)">
+    <div class="container about-text">
+      <p>Saffron &amp; Smoke was born from a simple belief — that Indian food deserves a contemporary stage without losing its soul. We don't fuse, we don't fancy-up. We cook the way our families do, just with better ingredients and a little more polish.</p>
+      <p>Our chef, Aarav Khanna, trained in the kitchens of Lucknow and London before coming home to Mumbai to open this room. Around him is a team that grinds spice every morning, kneads dough by hand, and still gets a little nervous when a regular walks in.</p>
+    </div>
+  </section>
+
+  <section class="parallax" style="background-image:url(images/tandoor-parallax.jpg); min-height:50vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 style="font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1rem">Slow Cooking, <span class="gold-text">Always</span></h2>
+      <div class="gold-divider"></div>
+      <p style="font-size:1.1rem; opacity:0.85; max-width:700px; margin:0 auto">Our dal simmers for sixteen hours. Our biryani is sealed and baked under live charcoal. Some things shouldn't be hurried.</p>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--bg)">
+    <div class="container cards-grid">
+      <div class="card-item timeline-card"><p class="year">2018</p><h3>The Doors Open</h3><p>A small 40-seater room on Linking Road.</p></div>
+      <div class="card-item timeline-card"><p class="year">2021</p><h3>Times Food Award</h3><p>Best Modern Indian, Mumbai.</p></div>
+      <div class="card-item timeline-card"><p class="year">2024</p><h3>A New Chapter</h3><p>We expanded into a second floor private dining room.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><h3 class="gold-text">Saffron &amp; Smoke</h3><p>A modern Indian dining experience. Honest spices, soulful cooking.</p></div>
+      <div><h4>Visit</h4><p>42 Linking Road<br>Bandra West, Mumbai<br>Open 12pm – 11pm</p></div>
+      <div><h4>Contact</h4><a href="mailto:theunnamedproject@protonmail.me">theunnamedproject@protonmail.me</a><p>+91 98765 43210</p></div>
+    </div>
+    <div class="footer-bottom">© <span id="footer-year"></span> Saffron &amp; Smoke. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron & Smoke — Modern Indian Dining</title>
+  <meta name="description" content="Modern Indian restaurant offering authentic regional cuisine in a warm, contemporary setting.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="gold-text">Saffron &amp; Smoke</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="parallax" style="background-image:url(images/hero-restaurant.jpg); min-height:100vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="label">Modern Indian Cuisine</p>
+      <h1 style="font-size:clamp(2.5rem,7vw,4.5rem); margin-bottom:1.5rem">A Tale of <span class="gold-text">Spice &amp; Soul</span></h1>
+      <div class="gold-divider"></div>
+      <p style="font-size:1.15rem; opacity:0.85; max-width:700px; margin:0 auto 2.5rem; line-height:1.7">
+        From the slow-burn tandoor to the gentle simmer of dum biryani — every plate is a postcard from the kitchens of India.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center">
+        <a href="reservations.html" class="btn-gold">Reserve a Table</a>
+        <a href="menu.html" class="btn-outline-gold">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section-pad" style="background:var(--bg)">
+    <div class="container cards-grid">
+      <div class="card-item">
+        <h3 class="gold-text">Regional Roots</h3>
+        <p>Recipes drawn from Punjab, Hyderabad, Kerala, and Bengal — cooked the way grandmothers meant them to be.</p>
+      </div>
+      <div class="card-item">
+        <h3 class="gold-text">Live Tandoor</h3>
+        <p>Watch our chefs coax smoky perfection from a clay oven heated to 480°C.</p>
+      </div>
+      <div class="card-item">
+        <h3 class="gold-text">Curated Pairings</h3>
+        <p>An award-listed cellar of Indian wines and a botanical bar built around regional spices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spice parallax -->
+  <section class="parallax" style="background-image:url(images/spices-parallax.jpg); min-height:55vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 style="font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1rem">The Spice is the Story</h2>
+      <div class="gold-divider"></div>
+      <p style="font-size:1.1rem; opacity:0.85; max-width:700px; margin:0 auto">
+        Every morning, our masala dabba is filled with whole spices roasted and ground in-house. Nothing pre-mixed. Nothing rushed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kitchen to table -->
+  <section class="section-pad" style="background:var(--bg)">
+    <div class="container two-col">
+      <img src="images/menu-feast.jpg" alt="Indian feast" loading="lazy">
+      <div>
+        <p class="label">The Experience</p>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1.5rem">From Our Kitchen<br>to Your Table</h2>
+        <p class="desc">
+          Whether it's a casual weekday lunch or a celebratory dinner, our menu is designed to be shared.
+          Pick a few small plates, a tandoori grill, a curry, breads — and let the table do the talking.
+        </p>
+        <a href="menu.html" class="btn-gold">Explore the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tandoor parallax -->
+  <section class="parallax" style="background-image:url(images/tandoor-parallax.jpg); min-height:50vh">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 style="font-size:clamp(2rem,5vw,3.5rem); margin-bottom:1rem">Fired by <span class="gold-text">Tradition</span></h2>
+      <div class="gold-divider"></div>
+      <p style="font-size:1.1rem; opacity:0.85; max-width:700px; margin:0 auto">
+        The tandoor is the heart of an Indian kitchen. Ours has been seasoned by years of smoke, charcoal, and care.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3 class="gold-text">Saffron &amp; Smoke</h3>
+        <p>A modern Indian dining experience. Honest spices, soulful cooking.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>42 Linking Road<br>Bandra West, Mumbai<br>Open 12pm – 11pm</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:theunnamedproject@protonmail.me">theunnamedproject@protonmail.me</a>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="footer-year"></span> Saffron &amp; Smoke. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
